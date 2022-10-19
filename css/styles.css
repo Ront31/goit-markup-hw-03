@@ -4,6 +4,7 @@ font-family: 'Roboto', sans-serif; */
 body {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
+  color: #757575;
 }
 
 /* header */
@@ -46,10 +47,6 @@ body {
 .nav-list-link:hover,
 .nav-list-link:focus {
   color: #2196f3;
-}
-
-.header-contacts-link {
-  color: #757575;
 }
 
 .header-contacts-link:hover,
