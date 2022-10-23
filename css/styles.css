@@ -2,6 +2,11 @@
   --primary-text-color: #757575;
   --secondary-text-color: #212121;
   --hover-text-color: #2196f3;
+  --hero-background-color: #2f303a;
+  --universal-color: #ffffff;
+  --function-background-color: #f5f5f5;
+  --studio-color: #000000;
+  --team-background-color: #f5f4fa;
 }
 body {
   font-family: 'Roboto', sans-serif;
@@ -24,7 +29,7 @@ body {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: black;
+  color: var(--studio-color);
 
   text-decoration: none;
 }
@@ -70,7 +75,7 @@ body {
 
 /* hero */
 .hero {
-  background-color: #2f303a;
+  background-color: var(--hero-background-color);
 }
 
 .hero-title {
@@ -81,7 +86,7 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--universal-color);
 }
 
 .hero-button {
@@ -96,14 +101,14 @@ body {
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
-  color: #ffffff;
+  color: var(--universal-color);
 }
 
 /* benefits */
 
 .benefits,
 .function {
-  background-color: #f5f5f5;
+  background-color: var(--function-background-color);
 }
 
 .visually-hidden {
@@ -138,7 +143,7 @@ body {
 /* section function and team*/
 
 .team {
-  background-color: #f5f4fa;
+  background-color: var(--team-background-color);
 }
 
 .function-list,
@@ -172,7 +177,7 @@ body {
 /* footer */
 
 .footer {
-  background-color: #2f303a;
+  background-color: var(--hero-background-color);
 }
 
 .footer-logo {
@@ -181,7 +186,7 @@ body {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: var(--universal-color);
 
   text-decoration: none;
 }
@@ -194,7 +199,7 @@ body {
   font-style: normal;
   line-height: 1.71;
 
-  color: #ffffff;
+  color: var(--universal-color);
 }
 
 .address-list-link {
@@ -219,7 +224,7 @@ body {
 /* portfolio section */
 
 .portfolio-section {
-  background-color: #f5f5f5;
+  background-color: var(--function-background-color);
 }
 
 .button-list,
@@ -233,13 +238,13 @@ body {
   line-height: 1.62;
   text-align: center;
 
-  color: #212121;
+  color: var(--secondary-text-color);
 }
 
 .portfolio-button:hover,
 .portfolio-button:focus,
 .portfolio-button:active {
-  color: #ffffff;
+  color: var(--universal-color);
   background: var(--hover-text-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
