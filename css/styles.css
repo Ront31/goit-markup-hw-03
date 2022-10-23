@@ -6,6 +6,7 @@
 body {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
+  font-size: 14px;
   color: var(--primary-text-color);
   letter-spacing: 0.03em;
 }
@@ -44,7 +45,6 @@ body {
 .nav-list-link,
 .header-contacts-link {
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.17;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
@@ -89,6 +89,7 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 
+  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
@@ -105,12 +106,25 @@ body {
   background-color: #f5f5f5;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .benefits-list {
   list-style-type: none;
 }
 
 .benefits-list-title {
-  font-size: 14px;
   line-height: 1.72;
   text-transform: uppercase;
 
@@ -118,7 +132,6 @@ body {
 }
 
 .benefits-list-text {
-  font-size: 14px;
   line-height: 1.71;
 }
 
@@ -179,7 +192,6 @@ body {
 
 .address-list-link-text {
   font-style: normal;
-  font-size: 14px;
   line-height: 1.71;
 
   color: #ffffff;
@@ -187,7 +199,6 @@ body {
 
 .address-list-link {
   font-style: normal;
-  font-size: 14px;
   line-height: 1.71;
 
   color: rgba(255, 255, 255, 0.6);
