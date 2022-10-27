@@ -332,6 +332,16 @@ img {
 .button-list,
 .img-list {
   list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.button-list {
+  justify-content: center;
+}
+
+.button-list-point:not(.button-list-point:last-child) {
+  margin-right: 8px;
 }
 
 .portfolio-button {
@@ -342,8 +352,14 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
 
+  margin-bottom: 50px;
+
+  padding: 6px 20px;
+
   background-color: var(--team-background-color);
   color: var(--secondary-text-color);
+  border-radius: 4px;
+  border: 0;
 }
 
 .portfolio-button:hover,
@@ -356,15 +372,37 @@ img {
   border-radius: 4px;
 }
 
+.img-list-point {
+  background: var(--universal-color);
+  border: 1px solid #eeeeee;
+}
+
+.img-list-point:not(.img-list-point:nth-child(3n)) {
+  margin-right: 27px;
+}
+
+.img-list-point:not(.img-list-point:nth-child(n + 7)) {
+  margin-bottom: 30px;
+}
+
 .img-list-title {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
 
   color: var(--secondary-text-color);
+
+  padding-right: 24px;
+  padding-left: 24px;
+  margin-bottom: 4px;
+  margin-top: 20px;
 }
 
 .img-list-text {
   font-size: 16px;
   line-height: 1.88;
+
+  padding-right: 24px;
+  padding-left: 24px;
+  padding-bottom: 20px;
 }
