@@ -382,6 +382,9 @@ img {
 
 .img-list-container {
   border: 1px solid #eeeeee;
+  padding-right: 24px;
+  padding-left: 24px;
+  padding-bottom: 20px;
 }
 
 .img-list-title {
@@ -391,8 +394,6 @@ img {
 
   color: var(--secondary-text-color);
 
-  padding-right: 24px;
-  padding-left: 24px;
   margin-bottom: 4px;
   margin-top: 20px;
 }
@@ -400,8 +401,4 @@ img {
 .img-list-text {
   font-size: 16px;
   line-height: 1.88;
-
-  padding-right: 24px;
-  padding-left: 24px;
-  padding-bottom: 20px;
 }
