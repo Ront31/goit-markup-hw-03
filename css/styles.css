@@ -7,6 +7,7 @@
   --function-background-color: #f5f5f5;
   --studio-color: #000000;
   --team-background-color: #f5f4fa;
+  --portfolio-div-color: #eeeeee;
 }
 
 body {
@@ -19,23 +20,37 @@ body {
 h1,
 h2,
 h3,
+h4,
+h5,
+h6,
 p,
-ul,
-li {
+ul {
   margin: 0;
   padding: 0;
 }
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
+  margin-top: 20px;
+}
+
+button {
+  display: block;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
 }
 
 .container {
   width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-right: auto;
-  margin-left: auto;
+  padding: 0 15px;
+  margin: 0 auto;
 
   /* outline: 2px solid tomato; */
 }
@@ -45,9 +60,15 @@ img {
   padding-top: 94px;
 }
 
-.hero-button,
-.portfolio-button {
-  cursor: pointer;
+.list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.link {
+  text-decoration: none;
+  /* color: inherit; */
 }
 
 /* header */
@@ -64,7 +85,6 @@ img {
   letter-spacing: 0.03em;
   color: var(--studio-color);
 
-  text-decoration: none;
   margin-right: 93px;
 }
 
@@ -92,8 +112,10 @@ img {
   line-height: 1.17;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
+}
 
-  text-decoration: none;
+.nav-list-link {
+  color: var(--secondary-text-color);
 }
 
 .nav-list-point:not(.nav-list-point:last-child) {
@@ -111,7 +133,7 @@ img {
   color: var(--hover-text-color);
 }
 
-.container.header {
+.header .container {
   display: flex;
   align-items: center;
 }
@@ -157,17 +179,16 @@ img {
 .hero-button {
   background: var(--hover-text-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
 
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
-  align-items: center;
   letter-spacing: 0.06em;
   color: var(--universal-color);
 
-  min-width: 152px;
+  margin-left: auto;
+  margin-right: auto;
   padding: 10px 32px;
 }
 
@@ -287,13 +308,11 @@ img {
   letter-spacing: 0.03em;
   color: var(--universal-color);
 
-  text-decoration: none;
-
   margin-bottom: 20px;
 }
 
-.address-list {
-  list-style-type: none;
+.address-list-point:not(.address-list-point:last-child) {
+  margin-bottom: 9px;
 }
 
 .address-list-link-text {
@@ -308,13 +327,6 @@ img {
   line-height: 1.71;
 
   color: rgba(255, 255, 255, 0.6);
-
-  margin-top: 9px;
-}
-
-.address-list-link,
-.address-list-link-text {
-  text-decoration: none;
 }
 
 .address-list-link:hover,
@@ -335,6 +347,7 @@ img {
 
 .button-list {
   justify-content: center;
+  margin-bottom: 50px;
 }
 
 .button-list-point:not(.button-list-point:last-child) {
@@ -349,13 +362,10 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
 
-  margin-bottom: 50px;
-
-  padding: 6px 20px;
+  padding: 6px 22px;
 
   background-color: var(--team-background-color);
   color: var(--secondary-text-color);
-  border-radius: 4px;
   border: 0;
 }
 
@@ -366,7 +376,6 @@ img {
   background: var(--hover-text-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
 }
 
 .img-list-point:not(.img-list-point:nth-child(3n)) {
@@ -378,7 +387,8 @@ img {
 }
 
 .img-list-container {
-  border: 1px solid #eeeeee;
+  border: 1px solid var(--portfolio-div-color);
+  padding-top: 20px;
   padding-right: 24px;
   padding-left: 24px;
   padding-bottom: 20px;
@@ -392,7 +402,6 @@ img {
   color: var(--secondary-text-color);
 
   margin-bottom: 4px;
-  margin-top: 20px;
 }
 
 .img-list-text {
